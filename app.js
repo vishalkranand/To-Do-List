@@ -20,7 +20,7 @@ app.get("/",function(req,res)
    
     const day = date.getDate();
 
-    res.render("list",{listTitle : day,newListItem:items});
+    res.render("index",{listTitle : day,newListItem:items});
 });
 
 app.post("/",function(req,res)
@@ -41,7 +41,7 @@ app.post("/",function(req,res)
 
 app.get("/work",function(req,res)
 {
-    res.render("list",{listTitle:"Work List",newListItem:workItems});
+    res.render("index",{listTitle:"Work List",newListItem:workItems});
 });
 
 app.get("/about",function(req,res)
